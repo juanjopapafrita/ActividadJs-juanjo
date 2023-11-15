@@ -1,0 +1,113 @@
+
+.padre{
+    display: flex;
+    height: 100vh;
+    
+}
+.ciudad{
+background-image: url(camino.png);
+background-size: cover;
+background-repeat:repeat;
+position: relative;
+margin: auto;
+width: 1020px;
+height: 720px;
+display: flex;
+animation: bogo-animada 3s linear infinite ;
+animation-play-state: paused;
+}
+
+.vagon{
+margin: auto;
+position: relative;
+top: 11rem;
+left: -60rem;
+animation: salto-vagon 1s linear infinite alternate;
+animation-play-state: paused;
+}
+
+.carroseria{
+     margin: auto;
+    position:relative;
+}
+
+.rueda1{
+    position: absolute;
+   right: 61rem;
+   top: 15rem;
+   animation: animacion-ruedas 4s linear infinite ;
+   animation-play-state: paused;
+}
+
+.rueda2{
+    position: absolute;
+   right: 88rem;
+   top: 15rem;
+   animation: animacion-ruedas 4s linear infinite ;
+   animation-play-state: paused;
+}
+
+
+.rueda3{
+    position: absolute;
+    right: 104rem;
+    top: 15rem;
+    animation: animacion-ruedas 4s linear infinite ; 
+    animation-play-state: paused;
+}
+
+.humoo{
+    position: absolute;
+    right: 106rem;
+    top: 15rem;
+}
+
+.lucess{
+    position: absolute;
+    right: 51rem;
+    top: 13rem;
+    animation: luces-animate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes salto-vagon{
+100%{
+transform: translateY(2px);
+}
+}
+
+@keyframes animacion-ruedas{
+100%{
+transform: rotate(360deg);
+}
+}
+
+@keyframes bogo-animada{
+0%{
+background-position-x: 0px;
+}
+}
+
+@keyframes bogo-animada{
+    100%{
+    background-position-x: -720px;
+    }
+    }
+
+@keyframes luces-animate {
+0% {
+    opacity: 0%;
+}
+}
+
+@keyframes luces-animate {
+    50% {
+        opacity: 50%;
+    }
+    }
+
+    @keyframes luces-animate {
+        100% {
+            opacity: 0%;
+        }
+        }
